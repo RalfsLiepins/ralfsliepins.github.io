@@ -1,0 +1,624 @@
+/*{
+    color: #E5E5E5;
+    margin: 0;
+    padding: 0;
+}*/
+
+@media (min-width: 320px) {
+    .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1366px;
+    }
+  }
+
+.container{
+    padding: 0;
+}
+
+
+
+    
+li, a{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color: black;
+    font-weight: 600;
+  }
+
+.nav-link:focus{
+    font-weight: 600;
+    border-bottom: 3px solid #FFA800;
+    display: inline-block;
+    line-height: 0.5;
+  }
+.navbar{
+    padding: 0;
+    min-height: 50px;
+}
+
+.navbar-brand{
+    padding-top: 0;
+    padding-left: 62px;
+}
+
+.navbar-nav{
+    align-items: center;
+    font-size: 18px;
+}
+.nav-item{
+    padding-top: 40px;
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.white-ting-navbar{
+    position: relative;
+    z-index: 0;
+    
+}
+
+h1{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #2F4858;
+}
+
+h2{
+    font-family: 'Oswald';
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44px;
+    color: #2F4858;
+}
+
+h4{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 22px; 
+}
+h5{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+small{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 17.07px;
+    font-weight: 400;
+}
+
+.main-form {
+    width: 613px;
+    height: 605px;
+    margin: auto;
+    margin-bottom: 252px;
+}
+.row{
+    margin: 0;
+}
+.row-yes{
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.poga-sūtīt{
+    margin-top: 50px;
+}
+
+
+
+.page-seaction-about-text{
+    max-width: 654px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: auto;
+}
+
+.text-wrapper h1{
+    margin-bottom: 10%;
+    color: white;
+    line-height: 36px;
+}
+
+.headline h1{
+    font-size: 48px;
+    margin-bottom: 60px;
+    line-height: 71px;
+}
+
+.carousel-seaction{
+    max-height: 568px;
+    min-height: 457px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.carousel-controls{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+@media screen and (max-width: 412px){
+    small, label{
+        font-size: 12px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    h4{
+        font-size: 18px;
+    }
+
+    .logo-footer{
+        width: 100px;
+        height: 100px;
+        margin-top: 1px;
+    }
+    .page-seaction-sapni{
+        align-self: start;
+    }
+    .page-seaction-about-text{
+        max-width: 280px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.img-gradient{
+    position:relative;
+    z-index: -1;
+  }
+
+  .img-gradient:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    background: linear-gradient(180deg, rgba(47, 72, 88, 0.8) 18.63%, rgba(47, 72, 88, 0) 49.21%);
+    transform: rotate(-180deg);
+  }
+ 
+
+
+
+@media screen and (min-width: 663px){
+    .kontakti-mobile{
+        display: none;
+    }
+}
+
+
+
+.language-switcher{
+    width: 256px;
+}
+
+@media screen and (min-width: 1200px){
+    .language-switcher{
+        display: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .language-switcher-row{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 572px){
+    .image-row-desktop{
+        display: none;
+    }
+}
+    @media screen and (min-width: 572px){
+        .image-row-mobile{
+            display: none;
+        }
+    }
+
+@media screen and (max-width: 991px){
+    .footer-list-item, .rekvizīti-full, .footer-name-right{
+        display: none;
+    }
+    .kontakti{
+        margin-right: 80px;
+        margin-top: 35.34px;
+    }
+    .copyright{
+        margin-top: 5px;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding-bottom: 50px;
+    }
+    .footer-column-left{
+        margin-left: 80px;
+    }
+    @media screen and (max-width: 663px){
+        .footer-column-left{
+            margin-left: 20px;
+        } 
+        .copyright{
+            margin-top: 0;
+            margin-left: 20px;
+            margin-right: auto;
+            padding-bottom: 30px;
+        } 
+        .socialmedia-icon-mobile{
+            margin-left: none;
+            margin-right: 35px;
+            margin-top: 25px;
+            margin-bottom: 35px;
+
+        }
+        .facebook{
+            width: 12.5px;
+            height: 25px;
+        }
+        .instagram{
+            width: 25px;
+            height: 25px;
+        }
+        .image-of-juris{
+            padding-right: 350px;
+        }
+        .text-wrapper h1{
+            margin-bottom: 25%;
+            line-height: 27px;
+        }
+        .headline h1{
+            font-size: 36px;
+            margin-bottom: 30px;
+            line-height: 53px;
+        }
+
+    }
+    .socialmedia-icon{
+        margin-left: 35px;
+        margin-top: 35px;
+    }   
+    
+}
+
+@media screen and (min-width: 991px){
+    .footer-name-left, .rekvizīti-min{
+        display: none;
+    }
+    .footer-column-left{
+        margin-left: 62px;
+    }
+    
+    .kontakti{
+        margin-right: 62px;
+    }
+    .socialmedia-icon{
+        margin-left: 35px;
+        margin-top: 52px;
+    } 
+    .copyright{
+        margin-top: 51px;
+        margin-left: 62px;
+        margin-right: 62px;
+        padding-bottom: 13px;
+    }   
+}
+@media screen and (max-width: 663px){
+    
+    .main-form{
+        width: 280px;
+        margin: auto;
+        margin-bottom: 369px;
+    }
+    .btn{
+        width: 233px;
+        height: 50px;
+    }
+    .kontakti{
+        display: none;
+    }
+    
+}
+
+
+.footer-name-left{
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.btn-primary{
+    background-color: #FFA800;
+    color: #ffffff;
+    border-color: #FFA800;
+}
+
+.btn-sūtīt{
+    border: none;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    line-height: 29px;
+    height: 62px;
+    width: 182px;
+    border-radius: 2rem;
+}
+
+
+
+.btn-primary:hover {
+    color: #fff;
+    background-color:#FFDA16;
+    border-color: #FFDA16;
+}
+
+.btn{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    height: 50px;
+    width: 233px;
+    border-radius: 2rem;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    color: #fff;
+    background-color: #FF8A00;
+    border-color: #ff8a00;
+    box-shadow: none;
+}
+
+.sūtīt-poga{
+    margin-top: 50px;
+    margin-left: 215px;
+    margin-right: auto;
+}
+
+footer{
+    padding-top: 49.66px;
+    background-color: #2F4858;
+}
+
+
+
+.wave{
+    width: 100%;
+    background-color: #2F4858;
+    position: absolute;
+    max-height: 59.75px;
+}
+
+.wave-white{
+    position: absolute;
+    width: 100%;
+    max-height: 59.75px;
+}
+
+.logo{
+    margin-top: 89px;
+   margin-bottom: 152px;
+   
+}
+
+.form-control{
+    background-color: rgb(196,196,196,0.4);
+}
+
+.col-lg{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.white-ting-decor{
+    position: absolute;
+}
+
+.page-seaction-sapni{
+    height: 429px;
+}
+.sapnotajiem{
+    padding-left: 220px;
+    text-align: center;
+}
+.uznemejiem{
+    padding-right: 220px;
+    text-align: center;
+}
+
+section.wave{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    width: 100%;
+}
+
+section.wave-botom{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: #FFCB66;
+    width: 100%;
+}
+
+#curve{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#curve2{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo-space{
+    margin-right: 85px;
+}
+
+
+.footer-list-item{
+    color: white;
+    font-weight: 400;
+}
+
+/*Atbalstītāji seaction*/
+.company-image{
+    padding-left: 22px;
+    padding-right: 22px;
+    margin-top: 40px;
+}
+
+.atb-margin-bottom{
+    margin-bottom: 152px;
+}
+
+.atbalstītāji{
+    margin-top: 100px;
+}
+
+.page-seaction{
+    background-color: #FFCB66;
+}
+
+@media screen and (max-width: 412px){
+    .company-image{
+        padding-left: 22px;
+        padding-right: 22px;
+        margin-top: 40px;
+    }
+    
+    .atb-margin-bottom{
+        margin-bottom: 70px;
+    }
+    
+    .atbalstītāji{
+        margin-top: 83px;
+    }
+}
+
+.image-ripped{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    margin-top: -2%;
+}
+.image-ripped-bottom, .image-navbar-bottom{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+
+
+.image{
+    padding: 0;
+}
+
+.text-wrapper{
+    position: absolute;
+    max-width: 818px;
+    min-width: 280px;
+}
+
+
+.juris{
+    overflow: hidden;
+}
+
+.carousel-item p{
+    max-width: 602px;
+    max-height: 213px;
+    font-style: italic;
+}
+
+b {
+    font-size: 50px;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 46px;
+  }
+  
+  b:hover {
+    color:#2f485885;
+  }
+  
+  .previous {
+    color:#2F4858;
+  }
+  
+  .next {
+    color:#2F4858;
+    ;
+  }
+
+  .video-overlay {
+    position: absolute;
+ 
+    display: inline;
+    align-items: center;
+  }
+
+
+.play-button2 {   
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.6;
+  z-index: 99;
+}
+
+.play-button2:hover {
+    opacity: 1;
+}
+
+.SparkleVideo.container{
+    position: relative; 
+}
+
+.page-seaction-sapni a{
+    text-decoration: none;
+}
+
+  
+  
+
+
+
+
+
