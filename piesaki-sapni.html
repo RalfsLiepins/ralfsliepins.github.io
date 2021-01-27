@@ -13,7 +13,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -35,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav">
                     <div class="language-switcher">
-                        <li class="nav-item d-flex justify-content-between">
+                        <li class="nav-item d-flex justify-content-between align-items-end">
                             <a href="#" class="nav-link">LV</a>
                             <a href="#" class="nav-link">EN</a>
                             <a href="#" class="nav-link">RU</a>
                         </li>
                     </div>
-                    <li class="nav-item nav-link-ideja active">
+                    <li class="nav-item nav-link-ideja">
                         <a href="ideja.html" class="nav-link">Ideja</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="piesaki-sapni.html" class="nav-link">Piesaki Sapni</a>
                     </li>
                     <li class="nav-item">
@@ -60,7 +59,7 @@
                         <a href="99-iedvestmas-stasti.html" class="nav-link">99 Iedvestmas stāsti</a>
                     </li>
                     <div class="language-switcher-row">
-                        <li class="nav-item nav-link-lv">
+                        <li class="nav-item nav-link-lv ">
                             <a href="#" class="nav-link">LV</a>
                         </li>
                     </div>
@@ -69,91 +68,143 @@
         </div>
         
     </nav>
-      
-    <section class="page-seaction-about-text ideja">
-        <div class="container">
+  
+
+     <!--About-->
+
+    <section class="page-seaction-about-text headline">
+        <div class="container align-items-end">
             <div class="row">
-                <div class="text-center headline">
+                <div class="text-center">
                     <h1>
-                        IDEJA
+                        PIESAKI SAPNI
                     </h1>
-                    <p>Juris Gogulis ir pasaules iedvesmots mākslinieks–horeogrāfs un režisors, kura ikdiena aizrit radot
-                         aizkustinošus un iedvesmojošus radošus projektus. Juris ir pārliecināts, ka ir vērts ticēt katram
-                          savam sapnim un censties to īstenot. Kā smejas pats - daudzu draugu sapņiem viņš tic vairāk, nekā
-                           viņi paši!
+                    <p>
+                        Tev ir iespēja pieteikt personīgo vai profesionālo sapni.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="juris"> 
+    <!--Sapņu izvēle-->
+   <section class="page-seaction-sapni d-flex align-items-center">
+    <div class="container">
+         <div class="row justify-content-around ">
+             <div class="flex-column d-flex sapni-top-column">
+                
+                     <img class="vector" src="assets/img/Group 12.png" alt="">
+                     <h1 class="text-center">PERSONĪGAIS SAPNIS</h1>
+                     <p class="text-center col-text-left">Bērnības nepiepildītie sapņi... No sev piederoša svaigi spiestas sulas bāra uz Tērbatas ielas līdz iespējai satikties ar Džekiju Čanu.</p>
+             
+              
+             <div class="mt-auto pt-5">   
+                     <a href="#">
+                             <button type="submit" class="btn btn-primary mx-auto d-block ">Sapņotājiem</button>
+                         </a> 
+            </div>
+
+             </div>        
+             <div class="flex-column d-flex justify-content-center">
+                <img class="vector" src="assets/img/Group 13.png" alt="">
+                 <h1 class="text-center">PROFESIONĀLAIS SAPNIS</h1>
+                 <p class="text-center col-text-left">Sapnis vai ideja, kura ir balstīta uz reģiona, pasaules vai cilvēku attīstību 4 virzienos - kultūra, izglītība, zinātne, ģimene jeb sociālā vide. Tā ir iespēja attīstīt ideju, kas uzlabotu ikdienas dzīves kvalitāti vai atrisinātu vietēja vai starptautiska līmeņa problēmu. Pastāsti, kāpēc Tev tas ir tik nozīmīgi?</p>
+                     <a class="pt-5" href="#">
+                         <button type="submit" class="btn btn-primary mx-auto d-block">Uzņēmējiem</button>
+                     </a>
+             </div>
+         </div>
+    </div>
+    </section>
+    
+    <!--Bilžu rinda-->
+    <section class="image1-row-desktop ">
         <div class="container">
-            <div class="d-flex align-items-end justify-content-center">
-                <img class="image-ripped-bottom image-ripped-top" src="assets/img/ripped 6 12.svg" alt="">
-                <img class="image-ripped-bottom-mobile image-ripped-top" src="assets/img/ripped 6 12 (1).svg" alt="">
-                <div class="text-center text-wrapper d-flex align-items-end justify-content-center">
-                    <h1>“Kopš 3 gadu vecuma mani ir audzinājusi mamma, pēc viņas piemēra esmu sapratis, cik sieviete ir spēcīga un
-                        varoša. Vēlos atlīdzināt un izveidot platformu, kurā
-                        satikties un palīdzēt cilvēkiem piepildīt savus sapņus.”</h1> 
+                <div class="row d-flex justify-content-center">
+                    <img class="image-ripped-bg3" src="assets/img/ripped 6 7.svg" alt="">
+                    <img class="image-ripped-bg2" src="assets/img/ripped-img-top-index.svg" alt="">
+                    <div class="column-1">
+                        <img src="assets/img/Lauma_4.jpg" class="img-fluid" alt="Responsive image">   
+                    </div>
+                    <div class="column-2">
+                        <img src="assets/img/Brinuma_meita-3.jpg" class="img-fluid" alt="Responsive image">
+                        <img src="assets/img/Arta_2 1.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <div class="column-3">
+                        <img src="assets/img/Lauma_3.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    
+                    <div class="column-4">
+                        <img src="assets/img/Brinuma_meita-2.jpg" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <img class="image-ripped-bg-bottom" src="assets/img/ripped 6 8.svg" alt="">
+                    <img class="image-ripped-bg-bottom image-ripped-mobile" src="assets/img/ripped 6 8 (2).svg" alt="">
+            </div>  
+       </div>  
+    </section>
+
+
+   <!--Saziņas forma-->
+   <section class="seaction-form" >
+   <form action="" class="main-form needs-validation" novalidate>
+        <h2 class="text-center">SAZINĀTIES AR MUMS</h2>
+        <div class="row row-yes">
+            <!--Vārds,Uzvārds-->
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <input type="text" name="name" id="name" class="form-control" required placeholder="Vārds, Uzvārds*">
                 </div>
-                <div class="img-gradient">
-                    <img src="assets/img/juris.jpg" class="image-of-juris">
+            </div>
+            <!--E-pasts-->
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <input type="email" name="email" id="email" class="form-control" required placeholder="E-pasts*">
                 </div>
-                <img class="image-ripped-bottom" src="assets/img/ripped 6 13 (1).svg" alt="">
-                <img class="image-ripped-bottom-mobile" src="assets/img/ripped 6 13.svg" alt="">
             </div>
         </div>
-    </div>
-
-   <!--Sapņu izvēle-->
-<section class="carousel-seaction">
-    <div class="container">
-    <div class="row">
-        <div class="col">
-   <div id="demo"  class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <h1>Ken Ludden</h1>
-          <h5>Director, Margot Fonteyn Academy of Ballet</h5>
-        <p>For it is Juris work that is the<br>
-            light the human race needs so badly these days. His vision is inspired and talent is beyond measure.</p>
-      </div>
-      <div class="carousel-item">
-        <h1>Ralfs Liepins</h1>
-        <h5>Not director of, Margot Fonteyn Academy of Ballet</h5>
-      <p>For it is Juris work that is the<br>
-          light the human race needs so badly these days. His vision is inspired and talent is beyond measure.</p>
-      </div>
-    </div>
-    <div class="d-flex flex-row align-items-start">
-        <a href="#demo" data-slide="prev">
-            <b href="#" class="previous round">&#8249;</b>
-        </a>
-        <a href="#demo" data-slide="next">
-            <b href="#" class="next round">&#8250;</b>
-        </a>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
+        <!--Telefons-->
+        <div class="form-group">
+            <input type="tel" name="number" id="number" class="form-control" required placeholder="Telefons*">
+        </div>
+        <!--Textarea-->
+        <div class="form-group text-area">
+        <textarea class="form-control" id="exampleFormControlTextarea1" required placeholder="Jautājums, vai komentārs*"></textarea>
+        </div>
+        <div class="required">
+            <label for="form-group" id="required-div">
+                <small>* obligāti aizpildāmie lauki</small>
+            </label>
+        </div>
+        <!--Checkbox-->
+        <div class="form-check" id="form-check-div">
+            <input type="checkbox" id="accept-terms" required class="form-check-input">
+            <label for="accept-terms" class="form-check-label">
+                <small>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</small>
+            </label>
+        </div>
+        <!--Sūtīt-->
+        <div id="poga-sūtīt-div">
+        <div class="poga-sūtīt container d-flex justify-content-center">
+            <button type="submit" class="btn-primary btn-sūtīt ">Sūtīt</button>
+        </div>
+        </div>
+        <div id="messages" class="text-center" role="alert" style="display:none;">
+            <h4>Paldies, ka sapņo!</h4>
+            <p>Ja Tavs sapnis tiks izvēlēts, mēs ar Tevi sazināsimies.</p>
+        </div>
+    </form>
 </section>
-
-
-    
    
    <!-- Footer-->
    <footer class="text-white">
     <div class="container">
         <div class="d-flex justify-content-between">
-            <!-- Footer Location-->
+            <!-- Footer logo-->
             <div class="flex-column footer-column-left">
                 <img class="logo-footer" src="assets/img/FooterLogo.png" width="182" height="182" alt="">
                 <h4 class="text-left footer-name-left">Juris Gogulis</h4>
             </div>
-            <!-- Footer Social Icons-->
+            <!-- Footer list-->
             <div class="flex-column">
                 <ul class="list my-list">
                     <p class="text-left my-footer">
@@ -184,6 +235,7 @@
                 <p class="text-left">LV52HABA0551047652465</p>
             </div>
 
+            <!-- Footer contacts-->
             <div class="kontakti">
             <div class="d-flex align-items-end flex-column">
                 <h4 class="footer-name-right">Juris Gogulis</h4>
@@ -198,6 +250,8 @@
             </div>
             </div>
         </div>
+
+        <!-- Footer contacts mobile-->
         <div class="kontakti-mobile">
             <div class="footer-column-left d-flex align-items-start flex-column">
                 <h4 class="footer-name-right">Juris Gogulis</h4>
@@ -223,6 +277,7 @@
     </div>
     
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -230,7 +285,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="/assets/js/theme.js"></script>
-
-    </body>
+</body>
 
 </html>

@@ -13,10 +13,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="/assets/js/theme.js"></script>
 
 </head>
 
@@ -41,7 +41,7 @@
                             <a href="#" class="nav-link">RU</a>
                         </li>
                     </div>
-                    <li class="nav-item nav-link-ideja active">
+                    <li class="nav-item nav-link-ideja">
                         <a href="ideja.html" class="nav-link">Ideja</a>
                     </li>
                     <li class="nav-item">
@@ -53,15 +53,15 @@
                     <li class="nav-item">
                         <a href="sapnu-banka.html" class="nav-link">Sapņu banka</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="sapnus-atbalsta.html" class="nav-link">Sapņus atbalsta</a>
                     </li>
                     <li class="nav-item">
                         <a href="99-iedvestmas-stasti.html" class="nav-link">99 Iedvestmas stāsti</a>
                     </li>
-                    <div class="language-switcher-row">
-                        <li class="nav-item nav-link-lv">
-                            <a href="#" class="nav-link">LV</a>
+                    <div class="language-switcher-row ">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">LV</a>
                         </li>
                     </div>
                 </ul>
@@ -69,91 +69,227 @@
         </div>
         
     </nav>
-      
-    <section class="page-seaction-about-text ideja">
-        <div class="container">
+
+     <!--About-->
+
+    <section class="page-seaction-about-text sapnus-atbalsta">
+        <div class="container d-flex align-items-center flex-column">
             <div class="row">
                 <div class="text-center headline">
                     <h1>
-                        IDEJA
+                        SAPŅUS ATBALSTA
                     </h1>
-                    <p>Juris Gogulis ir pasaules iedvesmots mākslinieks–horeogrāfs un režisors, kura ikdiena aizrit radot
-                         aizkustinošus un iedvesmojošus radošus projektus. Juris ir pārliecināts, ka ir vērts ticēt katram
-                          savam sapnim un censties to īstenot. Kā smejas pats - daudzu draugu sapņiem viņš tic vairāk, nekā
-                           viņi paši!
+                    <p>
+                        Sadarbības partneri ir uzņēmumi, kuri savā preču vai pakalpojumu ikdienā ir integrējuši SparkleHeart zīmolu un dala ar to konkrētu daļu savu ienākumu.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="juris"> 
-        <div class="container">
-            <div class="d-flex align-items-end justify-content-center">
-                <img class="image-ripped-bottom image-ripped-top" src="assets/img/ripped 6 12.svg" alt="">
-                <img class="image-ripped-bottom-mobile image-ripped-top" src="assets/img/ripped 6 12 (1).svg" alt="">
-                <div class="text-center text-wrapper d-flex align-items-end justify-content-center">
-                    <h1>“Kopš 3 gadu vecuma mani ir audzinājusi mamma, pēc viņas piemēra esmu sapratis, cik sieviete ir spēcīga un
-                        varoša. Vēlos atlīdzināt un izveidot platformu, kurā
-                        satikties un palīdzēt cilvēkiem piepildīt savus sapņus.”</h1> 
-                </div>
-                <div class="img-gradient">
-                    <img src="assets/img/juris.jpg" class="image-of-juris">
-                </div>
-                <img class="image-ripped-bottom" src="assets/img/ripped 6 13 (1).svg" alt="">
-                <img class="image-ripped-bottom-mobile" src="assets/img/ripped 6 13.svg" alt="">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="dropdown show">
+                <p>Uzņemuma atrašanas vieta</p>
+                <select class="btn btn-secondary"  id="evidence_selected" id="type" onchange="filterMarkers(this.value);">
+                    <option class="custom-option" value="">Izvēlies</option>
+                    <option value="riga">Rīga</option>
+                    <option value="jelgava">Jelgava</option>
+                    <option value="ogre">Ogre</option>
+                </select>
+            </div>
+            
+
+            <div class="dropdown show">
+                <p>Uzņemuma atrašanas vieta</p>
+                <select class="btn btn-secondary" id="evidence_selected" id="type" onchange="filterMarkers(this.value);">
+                    <option class="custom-option" value="">Izvēlies</option>
+                    <option value="edinasana">Ēdināšana</option>
+                    <option value="skaistumkopsana">Skaistumkopšana</option>
+                </select>
             </div>
         </div>
     </div>
+<!--
+    <div class="select-box"  >
+        <div class="options-container" onclick="filterMarkers(this.value);" >
+          <div class="option"  value="edinasana">
+            <input
+              type="radio"
+              class="radio"
+              name="category"
+            />
+            <label>Ēdināšana</label>
+          </div>
 
-   <!--Sapņu izvēle-->
-<section class="carousel-seaction">
+          <div class="option" value="skaistumkopsana">
+            <input
+              type="radio"
+              class="radio"
+              name="category"
+            />
+            <label>Skaistumkopšana</label>
+          </div>
+        </div>
+        <div class="selected">
+          Izvēlies
+        </div>
+      </div>
+    </div>
+
+    <script>
+        const selected = document.querySelector(".selected");
+const optionsContainer = document.querySelector(".options-container");
+
+const optionsList = document.querySelectorAll(".option");
+
+selected.addEventListener("click", () => {
+  optionsContainer.classList.toggle("active");
+});
+
+optionsList.forEach(o => {
+  o.addEventListener("click", () => {
+    selected.innerHTML = o.querySelector("label").innerHTML;
+    optionsContainer.classList.remove("active");
+  });
+});
+    </script>
+
+ <style>
+     .select-box {
+  display: flex;
+  width: 288px;
+  flex-direction: column;
+}
+
+.select-box .options-container {
+  background: rgba(196, 196, 196, 0.4);
+  color: #2F4858;
+;
+  max-height: 0;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+  border-radius: 8px;
+  overflow: hidden;
+
+  order: 1;
+}
+
+.selected {
+  background: rgba(196, 196, 196, 0.4);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  color: #2F4858;
+  position: relative;
+
+  order: 0;
+}
+
+.selected::after {
+  content: "";
+  background: url("/assets/img/arrowdown.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  height: 8.01px;
+  width: 14px;
+  right: 14.73px;
+  top: 20.26px;
+
+  transition: all 0.4s;
+}
+
+.select-box .options-container.active {
+  max-height: 240px;
+  opacity: 1;
+  overflow-y: scroll;
+}
+
+.select-box .options-container.active + .selected::after {
+  transform: rotateX(180deg);
+  top: 20.26px;
+}
+
+.select-box .options-container::-webkit-scrollbar {
+  width: 8px;
+  background: #0d141f;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .options-container::-webkit-scrollbar-thumb {
+  background: #525861;
+  border-radius: 0 8px 8px 0;
+}
+
+.select-box .option,
+.selected {
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.select-box .option:hover {
+  background: #414b57;
+}
+
+.select-box label {
+  cursor: pointer;
+}
+
+.select-box .option .radio {
+    display: none;
+  
+}
+ </style>
+-->
+<div class="results">
     <div class="container">
-    <div class="row">
-        <div class="col">
-   <div id="demo"  class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-          <h1>Ken Ludden</h1>
-          <h5>Director, Margot Fonteyn Academy of Ballet</h5>
-        <p>For it is Juris work that is the<br>
-            light the human race needs so badly these days. His vision is inspired and talent is beyond measure.</p>
-      </div>
-      <div class="carousel-item">
-        <h1>Ralfs Liepins</h1>
-        <h5>Not director of, Margot Fonteyn Academy of Ballet</h5>
-      <p>For it is Juris work that is the<br>
-          light the human race needs so badly these days. His vision is inspired and talent is beyond measure.</p>
-      </div>
-    </div>
-    <div class="d-flex flex-row align-items-start">
-        <a href="#demo" data-slide="prev">
-            <b href="#" class="previous round">&#8249;</b>
-        </a>
-        <a href="#demo" data-slide="next">
-            <b href="#" class="next round">&#8250;</b>
-        </a>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</section>
+        <div class="">
+            <div class="edinasana box" style="display:none;">
+                <div class="row">
+                    <img src="assets/img/purch-logo.svg" class="img-fluid" alt="Responsive image">
+                    <h4>PURCH restaurant</h4>
+                    <p>+371 25425254 
+                        <br>
+                        Dzelzavas iela 51A</p>
+                </div>
+                <div class="row">
+                    <img src="assets/img/JAUNS LOGO-KURTS 1.svg" class="img-fluid" alt="Responsive image">
+                    <h4>Kurts coffee</h4>
+                    <p>+371 23202079
+                        <br>
+                        Cēsu iela 20, Tērbatas iela 2i</p>
+                </div>
 
+            </div>
+        </div>
+        <div id="jelgava" style="display:none;">
+            <h4>Jelgava</h4>
+            <p>Jelgava</p>
+        </div>
+    </div>
+</div>
 
     
+    <div class="container">
+        <div id="map"></div>
+    </div>
+
+  
+
    
    <!-- Footer-->
    <footer class="text-white">
     <div class="container">
         <div class="d-flex justify-content-between">
-            <!-- Footer Location-->
+            <!-- Footer logo-->
             <div class="flex-column footer-column-left">
                 <img class="logo-footer" src="assets/img/FooterLogo.png" width="182" height="182" alt="">
                 <h4 class="text-left footer-name-left">Juris Gogulis</h4>
             </div>
-            <!-- Footer Social Icons-->
+            <!-- Footer list-->
             <div class="flex-column">
                 <ul class="list my-list">
                     <p class="text-left my-footer">
@@ -184,6 +320,7 @@
                 <p class="text-left">LV52HABA0551047652465</p>
             </div>
 
+            <!-- Footer contacts-->
             <div class="kontakti">
             <div class="d-flex align-items-end flex-column">
                 <h4 class="footer-name-right">Juris Gogulis</h4>
@@ -198,6 +335,8 @@
             </div>
             </div>
         </div>
+
+        <!-- Footer contacts mobile-->
         <div class="kontakti-mobile">
             <div class="footer-column-left d-flex align-items-start flex-column">
                 <h4 class="footer-name-right">Juris Gogulis</h4>
@@ -223,14 +362,33 @@
     </div>
     
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8Z26DqQR6Dpj4Ip9HDVsxSLI_bXtPp_g&map_ids=888bb5dcaf85064d&callback=initMap"
+        defer></script>
     <script src="/assets/js/theme.js"></script>
-
-    </body>
-
+       
+    <script>
+        $(document).ready(function(){
+            $("select").change(function(){
+                $(this).find("option:selected").each(function(){
+                    var optionValue = $(this).attr("value");
+                    if(optionValue){
+                        $(".box").not("." + optionValue).hide();
+                        $("." + optionValue).show();
+                    } else{
+                        $(".box").hide();
+                    }
+                });
+            }).change();
+        });
+        
+    </script>
+</body>
 </html>
